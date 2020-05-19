@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+   >
+
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/mtf_cardHeight_initial"
+        android:layout_height="wrap_content"
+        app:mtf_cardCollapsedHeight="4dp"
+        app:mtf_labelColor="#366697"
+        app:mtf_openKeyboardOnFocus="true"
+        app:mtf_image="@drawable/sugbook"
+        >
+
+        <EditText
+            android:id="@+id/title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/mtf_corner_radius"
+        android:layout_height="wrap_content"
+        app:mtf_labelColor="#366697"
+        app:mtf_openKeyboardOnFocus="true"
+        app:mtf_image="@drawable/author"
+        >
+
+        <EditText
+            android:id="@+id/author1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Author"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/mtf_corner_radius"
+        android:layout_height="wrap_content"
+        app:mtf_labelColor="#366697"
+        app:mtf_openKeyboardOnFocus="true"
+        app:mtf_image="@drawable/note"
+        >
+
+        <EditText
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Note"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textColor="#ffffff"
+        android:text="Submit"
+        android:background="@drawable/gbutton"
+        android:textSize="15dp"
+        android:id="@+id/subsuggest"
+        android:gravity="center" />
+
+</LinearLayout>
+
+
+
+

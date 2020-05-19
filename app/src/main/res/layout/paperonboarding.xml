@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/relative"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+    <!-- divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:alpha="0.12"
+        android:background="@android:color/white"
+        tools:layout_editor_absoluteY="583dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_gravity="bottom"
+        android:padding="0dp"
+        tools:layout_editor_absoluteY="476dp">
+
+        <!-- This overlaps the next button in the last slide -->
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/intro_indicator_0"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/nonactive_dot" />
+
+            <ImageView
+                android:id="@+id/intro_indicator_1"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_alignRight="@+id/intro_indicator_0"
+                android:layout_marginLeft="05dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/active_dot" />
+
+            <ImageView
+                android:id="@+id/intro_indicator_2"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_alignRight="@+id/intro_indicator_1"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/active_dot" />
+
+
+            <!-- Your other 2 indicators here -->
+
+        </LinearLayout>
+
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:padding="0dp"
+            android:text="Login"
+            android:fontFamily="@font/lato"
+            android:textSize="25sp"
+            android:id="@+id/loginbutton"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black" />
+
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

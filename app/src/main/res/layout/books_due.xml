@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clipChildren="true"
+    android:clipToPadding="true"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="10dp"
+    >
+
+
+    <com.ramotion.foldingcell.FoldingCell xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/folding_cell1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+        ​
+
+        <LinearLayout
+            android:id="@+id/cell_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@android:color/holo_blue_light">
+
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="centerCrop" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <TextView
+                    android:id="@+id/titles2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="11dp"
+                    android:fontFamily="@font/lato"
+                    android:text="Da vinci code"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/by2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textview_duedate2"
+                    android:layout_alignBottom="@+id/textview_duedate2"
+                    android:layout_alignLeft="@+id/titles2"
+                    android:layout_alignStart="@+id/titles2"
+                    android:fontFamily="@font/lato"
+                    android:text="by"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titles2"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginStart="11dp"
+                    android:layout_toEndOf="@+id/by2"
+                    android:layout_toRightOf="@+id/by2"
+                    android:fontFamily="@font/lato"
+                    android:text="Brown, Dan"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textdueby2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/textview_duedate2"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginStart="31dp"
+                    android:layout_toEndOf="@+id/titles2"
+                    android:layout_toRightOf="@+id/titles2"
+                    android:fontFamily="@font/lato"
+                    android:text="Due By"
+                    android:textColor="#a10606"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textview_duedate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textdueby2"
+                    android:layout_alignStart="@+id/textdueby2"
+                    android:layout_below="@+id/titles2"
+                    android:fontFamily="@font/lato_thin"
+                    android:text="20-05-17"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/renewbook"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/holo_blue_dark"
+                    android:gravity="center"
+                    android:text="Renew"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        ​
+
+        <RelativeLayout
+            android:id="@+id/cell_title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#507EAC">
+
+
+            <TextView
+                android:id="@+id/titles"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Da vinci code"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textdueby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/titles"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/lato"
+                android:text="Due By"
+                android:textColor="#a10606"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textview_duedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textdueby"
+                android:layout_alignBottom="@+id/textdueby"
+                android:layout_marginLeft="17dp"
+                android:layout_marginStart="17dp"
+                android:layout_toEndOf="@+id/textdueby"
+                android:layout_toRightOf="@+id/textdueby"
+                android:fontFamily="@font/lato_thin"
+                android:text="20-05-17"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/renew"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/black"
+                android:gravity="center"
+                android:text="Renew"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+        ​
+    </com.ramotion.foldingcell.FoldingCell>
+
+</LinearLayout>

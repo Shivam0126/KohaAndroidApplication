@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:iconTint="#ffffff"
+            android:icon="@drawable/home"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_home"
+            android:iconTint="#ffffff"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_issue"
+            android:iconTint="#ffffff"
+            android:icon="@drawable/studyblue"
+            android:title="Issue book" />
+        <item
+            android:id="@+id/nav_books"
+            android:iconTint="#ffffff"
+            android:icon="@drawable/book"
+            android:title="Your Books" />
+        <item
+            android:id="@+id/nav_fine"
+            android:iconTint="#ffffff"
+            android:icon="@drawable/fine"
+            android:title="Fine" />
+        <item
+            android:id="@+id/nav_support"
+            android:iconTint="#ffffff"
+            android:icon="@drawable/support"
+            android:title="Support" />
+        <item
+            android:id="@+id/nav_suggestbook"
+            android:iconTint="#ffffff"
+            android:icon="@drawable/home"
+            android:title="Suggest book" />
+        <item
+            android:id="@+id/nav_logout"
+            android:iconTint="#ffffff"
+            android:icon="@drawable/logout"
+            android:title="Log Out" />
+
+    </group>
+
+
+</menu>

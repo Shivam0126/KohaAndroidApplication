@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/linearlayout"
+       android:background="#366697"
+       >
+
+
+           <TextView
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:fontFamily="@font/lato"
+               android:text="Date"
+               android:textColor="#ffffff"
+               android:layout_marginLeft="03dp"
+               android:textSize="20sp" />
+
+       <TextView
+           android:layout_width="120dp"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="80dp"
+           android:fontFamily="@font/lato"
+           android:text="Description"
+           android:textColor="#ffffff"
+           android:textSize="20sp" />
+
+           <TextView
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:fontFamily="@font/lato"
+               android:text="Fine"
+               android:layout_marginLeft="70dp"
+               android:textColor="#ffffff"
+
+               android:textSize="20sp" />
+
+
+   </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout"
+        android:layout_marginTop="05dp"
+        android:id="@+id/finerecycl">
+
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato"
+        android:layout_alignParentBottom="true"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:id="@+id/outstanding_amount"
+        android:background="#366697"
+        android:text="OUTSTANDING AMOUNT" />
+
+
+</RelativeLayout>

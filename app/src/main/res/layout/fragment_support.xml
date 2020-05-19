@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp">
+
+    <Button
+        android:id="@+id/expandableButton1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:fontFamily="@font/lato"
+        android:paddingRight="10dp"
+        android:text="Ask a question"
+        android:textColor="#1D4F84" />
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/expandableButton1"
+        android:background="@color/white"
+        android:padding="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_orientation="vertical">
+
+        <EditText
+            android:id="@+id/q1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:backgroundTint="@android:color/transparent"
+            android:fontFamily="@font/lato"
+            android:hint="Enter your question here"
+            android:textColor="#87898C"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/submitquestion"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_alignRight="@id/q1"
+            android:layout_below="@+id/q1"
+            android:background="#366697"
+            android:fontFamily="@font/lato"
+            android:text="Submit"
+            android:textColor="@color/white" />
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+    <Button
+        android:id="@+id/expandableButton2"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:fontFamily="@font/lato"
+        android:paddingRight="10dp"
+        android:text="Report an issue"
+        android:textColor="#1D4F84" />
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/expandableButton2"
+        android:background="@color/white"
+        android:padding="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_orientation="vertical">
+
+        <EditText
+            android:id="@+id/q2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:backgroundTint="@android:color/transparent"
+            android:fontFamily="@font/lato"
+            android:hint="Enter the issue here"
+            android:textColor="#87898C"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/submitissue"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_alignRight="@id/q2"
+            android:layout_below="@+id/q2"
+            android:background="#366697"
+            android:fontFamily="@font/lato"
+            android:text="Submit"
+            android:textColor="@color/white" />
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+    <Button
+        android:id="@+id/expandableButton3"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:drawableRight="@android:drawable/arrow_down_float"
+        android:fontFamily="@font/lato"
+        android:paddingRight="10dp"
+        android:text="Share an idea"
+        android:textColor="#1D4F84" />
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/expandableButton3"
+        android:background="@color/white"
+        android:padding="16dp"
+        app:ael_duration="400"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:ael_expanded="false"
+        app:ael_orientation="vertical">
+
+        <EditText
+            android:id="@+id/q3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:backgroundTint="@android:color/transparent"
+            android:fontFamily="@font/lato"
+            android:hint="Enter your idea here"
+            android:textColor="#87898C"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/submitidea"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_alignRight="@id/q3"
+            android:layout_below="@+id/q3"
+            android:background="#366697"
+            android:fontFamily="@font/lato"
+            android:text="Submit"
+            android:textColor="@color/white" />
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+</LinearLayout>

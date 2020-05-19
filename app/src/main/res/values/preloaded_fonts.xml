@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/antic</item>
+        <item>@font/arbutus_slab</item>
+        <item>@font/black_ops_one</item>
+        <item>@font/concert_one</item>
+        <item>@font/fredoka_one</item>
+        <item>@font/lato</item>
+        <item>@font/lato_light</item>
+        <item>@font/lato_thin</item>
+    </array>
+</resources>

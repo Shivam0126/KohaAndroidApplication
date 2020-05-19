@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/library"
+    android:id="@+id/loginAct"
+    tools:context="com.example.shivam.culibrary.LoginActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/culogo"
+        android:layout_marginTop="60dp"
+        android:id="@+id/christlogo"
+        android:layout_gravity="center" android:contentDescription="TODO"/>
+
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/loginedittext"
+        android:drawableRight="@drawable/edituser"
+        android:fontFamily="@font/lato_thin"
+        android:hint="USERNAME"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/loginedittext"
+        android:drawableRight="@drawable/password"
+        android:fontFamily="@font/lato_thin"
+        android:hint="PASSWORD"
+        android:inputType="numberPassword"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/gbutton"
+        android:fontFamily="@font/lato"
+        android:onClick="login"
+        android:id="@+id/loginbtn"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+</LinearLayout>

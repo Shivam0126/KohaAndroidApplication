@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "789409848251",
+    "firebase_url": "https://culibrary2.firebaseio.com",
+    "project_id": "culibrary2",
+    "storage_bucket": "culibrary2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789409848251:android:cb9593b2520d6a5c",
+        "android_client_info": {
+          "package_name": "com.example.shivam.culibrary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789409848251-e8jim4plam0qprl0sjo72t8kjf3grqo9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZG6dvLltC28SC0zfxDlIdAC8E_e8k8bs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
